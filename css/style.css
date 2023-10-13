@@ -1,0 +1,145 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 25px;
+  height: 100%;
+}
+
+body {
+  margin: 5%;
+  background: url('../img/bartender.jpg')  no-repeat, rgba(0,0,0,1);
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h3 {
+  padding-bottom: 5%;
+}
+
+#logo {
+  display: block;  /* Ensures the image takes up the full width of its container */
+  max-width: 45%; /* Makes sure the logo scales down if it exceeds the container's width */
+  height: 5%;    /* Maintains the logo's aspect ratio when resizing */
+  margin: 2% auto; /* 20px margins at the top and bottom, auto centers the image */
+}
+
+.btn {
+  background-color: grey; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: blue; /* Slightly darker on hover */
+}
+
+
+body.cocktail-lounge {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: white; /* Soft amber, like a cocktail */
+  text-align: left;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cocktail-info {
+  margin:  5%;
+}
+
+.cocktail-info img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  width: 50%;
+}
+.cocktail-info ul {
+  list-style-position: inside; /* Move the bullet points inside the list items */
+  text-align: left;         /* Center the text and the bullet points */
+  padding: 0;                 /* Remove default padding */
+  margin: 0 auto;             /* Center the list within its container */
+  width: fit-content;         /* Make the width only as wide as the content */
+  padding-bottom: 5%;
+}
+
+.cocktail-info li {
+  margin: 0.5em 0;            /* Some space between list items for better readability */
+}
+
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #f1c575; /* Same amber color for consistency */
+  color: #1a1a1a; /* Dark text for contrast */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 2%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #e5af60; /* Slightly darker on hover */
+}
+
+.search-bar {
+  margin-top: 3%;
+}
+@media (max-width: 768px) {
+    /* Responsive adjustments for smaller devices */
+    
+    .container {
+        padding: 10px;
+    }
+
+    .cocktail-info img {
+        width: 90%;
+    }
+
+    #logo {
+      max-width: 90%;
+    }
+}
